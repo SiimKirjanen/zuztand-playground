@@ -1,4 +1,4 @@
-import useCounterStore from "../../stores/bear";
+import useCounterStore from "../../stores/counterStore";
 
 function Counter() {
     const count = useCounterStore(state => state.count);
