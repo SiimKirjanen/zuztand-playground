@@ -1,8 +1,9 @@
 import useCounterStore from "../../stores/bear";
 
 function Counter() {
-    // Use the Zustand store
-    const { count, increment, decrement } = useCounterStore();
+    const count = useCounterStore(state => state.count);
+    const increment = useCounterStore(state => state.increment);
+    const decrement = useCounterStore(state => state.decrement);
   
     return (
       <div>
